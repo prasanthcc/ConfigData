@@ -14,13 +14,8 @@ server:
 eureka.client.fetch-registry: true      
 
 spring:
-    datasource:
-      url: jdbc:mysql://localhost:3306/userdb
-      username: root
-      password: admin  
-      tomcat:
-        max-active: 5
-        max-idle: 10000
+    profiles: sit
+    
 security:
   basic:
     enabled: false
