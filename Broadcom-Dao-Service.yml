@@ -6,3 +6,11 @@ hibernate.dialect: org.hibernate.dialect.MySQLDialect
 hibernate.show_sql: true
 hibernate.hbm2ddl.auto: update
 
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+  instance:
+    hostname: localhost
